@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.conteiner{
+          display: flex; /*Coloca os elementos um do lado do outro*/
+          flex-flow: row nowrap;
+
+          /*CONFIGURAÇÕES EIXO PRINCIPAL*/
+          /*
+          justify-content: flex-start; /*valor padrão*/
+          /*
+          justify-content: flex-end;
+          justify-content: center;
+          justify-content: space-between;
+          justify-content: space-evenly
+          justify-content: space-around
+
+           /*CONFIGURAÇÕES EIXO TRANSVERSAL*/
+         /* align-items:stretch;*/ /*valor padrão*/
+          /*align-items:flex-start; */
+          /*align-items:flex-end; */
+          /*align-items:center; */
+          */
+          height: 300px;
+          justify-content: space-around;
+
+          background-color: lightsalmon;
+      }
+
+      div.item{
+          background-color: lightblue;
+          border: 1px solid black;
+          text-align: center;
+         }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
