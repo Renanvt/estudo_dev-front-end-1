@@ -48,7 +48,7 @@ Eu posso escolher a posição dos itens
 
 ![foto11](img/11.PNG)
 
-Quando usamos o flexbox a propriedade **stech** ja vem ligada que estica e encolhe dinamicamente
+Quando usamos o flexbox a propriedade **stretch** ja vem ligada que estica e encolhe dinamicamente
 
 Também podemos configurar pra ter um deslocamento inferior
 ![foto12](img/12.PNG)
@@ -70,6 +70,7 @@ E que também podem se adaptar
 **Os itens não vão receber a configuração do display flex, eles vão receber outras configurações**
 
 Flex-container = Pai
+
 Flex-items = filhos
 
 ![foto17](img/17.PNG)
@@ -84,7 +85,7 @@ As configurações de direções são realizadas no pai
 ### Propriedades do flex-direction
 
 Por padrão a propriedade é **flex-direction: row;**
-da esquerda pra direita (diração da leitura)
+da esquerda pra direita (direção da leitura)
 ![foto18](img/18.PNG)
 
 
