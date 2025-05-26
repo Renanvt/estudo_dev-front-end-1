@@ -327,3 +327,85 @@ Se eu mudar a qualquer momento o formato do conteiner
 
 ![foto63](img/67.PNG)
 > Coloco essas duas propriedades com o valor center. Sempre no conteiner
+
+# Alinhamento de elementos empacotados
+
+Elemento empacotado é aquele que se quebra. Quando utilizados a propriedade **wrap**
+
+![foto63](img/68.PNG)
+
+E se eu ampliar o conteiner?
+
+
+![foto63](img/69.PNG)
+> NÃO ACONTECE ISSO NA PRÁTICA
+
+![foto63](img/69.PNG)
+> Precisamos decidir oque fazer com esse espaço em branco
+
+![foto63](img/69.PNG)
+> A propriedade align-content vai decidir isso
+
+Muita gente confunde **align-content** com **justify-content** e **align-items**
+
+**justify-content** Vai alinhar os itens dentro do eixo principal
+
+**align-items** Vai alinhar os itens dentro do eixo transversal
+
+**align-content** Vai alinhar os elementos no deixo transversal, mas **QUANDO ELES ESTÃO EMPACOTADOS**
+
+
+## align-content: stretch
+
+Elemento padrão é dado pelo valor stretch
+
+Vai pegar a dimensão inteira, no caso altura, e vai dividir em duas partes iguais, ou de acordo com o tamanho do conteinner.
+
+O stretch vai pegar toda a área disponível e vai dividir pelo número de linhas ou colunas. Vai por os itens dentro pegando a dimensão do cross-axis de todos os itens e puxar pra baixo.
+
+Exemplo:
+
+![foto63](img/72.PNG)
+
+![foto63](img/73.PNG)
+
+![foto63](img/74.PNG)
+
+## align-content: flex-start
+
+Vai pegar todos os elementos e colocar grudados no cross-start reservando o espaço em branco de baixo grudado no cross-end.
+
+![foto63](img/75.PNG)
+
+
+## align-content: flex-end
+
+Vai pegar todos os elementos e colocar grudados no cross-end reservando o espaço de cima grudado no cross-start para colocar o espaço em branco.
+
+![foto63](img/76.PNG)
+
+## align-content: center
+
+Vai pegar os elementos quebrados e alinhar no centro, criando no cross-start e no cross-end espaços em branco iguais.
+
+![foto63](img/77.PNG)
+
+
+## align-content: space-between
+
+Vai pegar os primeiros elementos e colocar perto do cross-start. Vai pegar os últimos elementos e colocar perto do cross-end, e o espaço no meio ele vai dividir com outros itens que porventura irão existir.
+
+![foto63](img/78.PNG)
+
+## align-content: space-evenly
+
+Coloca espaços no cross-start e no cross-end. Esse espaço é calculado para que eu coloque os elementos, e entre esses elementos também exista exatamente o mesmo espaçamento.
+
+![foto63](img/79.PNG)
+
+## align-content: space-around
+
+Divide o eixo transversal em partes iguais, colocando os elementos dentro dessas áreas demarcadas e vai centralizar os itens
+
+![foto63](img/80.PNG)
+> Não vai fazer a puxadinha que o Stretch faz
