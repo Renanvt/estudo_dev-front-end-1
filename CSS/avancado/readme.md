@@ -409,3 +409,106 @@ Divide o eixo transversal em partes iguais, colocando os elementos dentro dessas
 
 ![foto63](img/80.PNG)
 > Não vai fazer a puxadinha que o Stretch faz
+
+# Anatomia dos itens Flexbox
+
+Quando criamos conteiner flexbox, a parte de fora é flex, entretanto, a parte de dentro não é flex. Mais eu posso pegar 1 ou mais itens e torna-los conteiners. Mais se eu fizer isso vai começar a bagunçar e dificultar a visão tornando muito avançado.
+
+Iremos trabalhar por enquanto com os elementos pai sendo flex e o elementos filho não flex.
+
+
+![foto63](img/81.PNG)
+
+
+## order 
+
+Todo o item em flexbox que estiver dentro do pai vai ter **ordem:0** por padrão
+
+![foto63](img/82.PNG)
+
+Caso deseje modificar a ordem de posição dos elementos terá que aplicar a propriedade order com valores diferentes
+
+![foto63](img/83.PNG)
+
+O próprio CSS vai ordenar para que esse itens fique em orde crescente, dessa maneira:
+
+![foto63](img/84.PNG)
+
+## align-self
+
+Ele se aplica aos itens e vai funcionar diretamente no cross-axis. Ele não serve para conteiner/pais, somente para filhos/itens.
+
+Com essa propriedade eu consigo alterar o comportamento do alinhamento individual de cada elemento dentro do cross-axis
+
+![foto63](img/85.PNG)
+
+
+![foto63](img/86.PNG)
+>O valor auto vai herdar as características de alinhamento vertical do seu pai. Seja ele o align-content ou align-items
+
+
+![foto63](img/87.PNG)
+>Alinhamento perto do cross-start
+
+![foto63](img/88.PNG)
+>Alinhamento perto do cross-end
+
+![foto63](img/90.PNG)
+>Vai calcular o alinhamento do cross-start e do cross-end
+
+
+![foto63](img/89.PNG)
+
+
+E se nós ampliarmos o cross-axis?
+
+![foto63](img/91.PNG)
+
+# Propriedade flex-basis
+
+Semelhante ao align-self, ele também é uma propriedade de itens, ou seja, de filhos, logo não se aplica ao pai.
+
+
+Por padrão a propriedade flex-basis sempre vem com valor **auto**. Isso significa que o tamanho do elemento no seu eixo principal é ditada através do tamanho do seu conteúdo.
+
+![foto63](img/92.PNG)
+
+![foto63](img/93.PNG)
+
+![foto63](img/94.PNG)
+>O tamanho do eixo principal no sentido do eixo principal é ditado através do conteúdo.
+
+Vai aumentar a largura até que comporte o conteúdo. A largura dos itens de cada elemento é dada através do tamanho do seu conteúdo.
+
+E se diminuir ?
+
+![foto63](img/95.PNG)
+> Vai tentar expremer ao máximo utilizando o espaço disponível
+
+E se eu aumentar muito?
+
+![foto63](img/96.PNG)
+>Não vai espichar todos os itens pelo conteiner, vai manter o tamanho automático de acordo com o tamanho do conteúdo interno
+
+E seu eu por: **flex-basis: 200px**?
+
+
+>Vai fixar os elementos com 200px e NÃO irá se adaptar ao conteúdo. Todos eles vão ter 200px
+
+![foto63](img/97.PNG)
+
+![foto63](img/98.PNG)
+> Pode se alterar o valor individualmente
+
+Esse tamanho fixado irá permanecer enquanto couber. Caso não exista espaço físico para que todos tenham 200px, todos vão diminuir de forma igual. Exemplo:
+
+
+![foto63](img/99.PNG)
+> cria uma quebra no conteúdo de B, e descartou totalmente os 200px
+
+Não tem como dentro de um contener de 500px eu ter três itens de 200px. È matematicamente impossível, sendo assim, eu utilizo a propriedade **flex-basix** e não *width* 
+
+E se eu diminuir mais ainda?
+
+![foto63](img/100.PNG)
+> Terá esse tipo de problema

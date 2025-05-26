@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.conteiner {
+        display: flex; /*Coloca os elementos um do lado do outro*/
+        background-color: lightsalmon;
+        height: 400px;
+        align-items: flex-start;
+        flex-flow: row wrap;
+      }
+
+      div.conteiner2 {
+        margin-top: 20px;
+        display: flex; /*Coloca os elementos um do lado do outro*/
+        background-color: lightsalmon;
+        height: 400px;
+        align-items: flex-start;
+        flex-flow: row wrap; /*Deixa o cross-axis de cima pra baixo*/
+      }
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px;
+      }
+
+      div.item2 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px;
+      }
+
+      div#i1 {
+        
+      }
+
+      div#i2 {
+       align-items: auto; /*Vai herdar a propriedade do pai, que é align-items: flex-start*/
+       /*align-items: inherit;*/ /*Mesmo resultado do align-items:auto*/
+      }
+      div#i3 {
+       align-self: flex-end;
+      }
+      div#i4 {
+        
+      }
+      div#i5 {
+        align-self: center;
+      }
+      div#i6 {
+        align-self: flex-start
+      }
+      div#i7 {
+        align-self: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item" style="order: -3">D</div>
+      <!-- -3 é menor do que zero, então sera posto antes de todas as outras letras-->
+      <div class="item" style="order: 1">E</div>
+      <!-- Fica em ultimo lugar, porque todos os outros elementos são 0-->
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+
+    <div class="conteiner2">
+      <div class="item2" id="i1">A</div>
+      <div class="item2" id="i2">B</div>
+      <div class="item2" id="i3">C</div>
+      <div class="item2" id="i4">D</div>
+      <div class="item2" id="i5">E</div>
+      <div class="item2" id="i6">F</div>
+      <div class="item2" id="i7">G</div>
+    </div>
+  </body>
+</html>
