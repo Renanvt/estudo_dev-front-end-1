@@ -306,3 +306,24 @@ Vai fazer os elementos grudarem no centro do eixo transversal, deixando um espa�
 ![foto57](img/62.PNG)
 
 O align-items não tem configurações de espaçamento como o space-around, space-between e space-evenly existe uma outra propriedade que faz isso.
+
+# Centralização Absoluta Flexbox
+
+**Objetivo:**
+
+![foto63](img/63.PNG)
+
+Idependente do formato do conteiner o item vai ficar sempre no meio
+
+Se eu mudar a qualquer momento o formato do conteiner
+
+![foto63](img/64.PNG)
+> O item continua centralizado
+
+![foto63](img/65.PNG)
+> O item continua centralizado. 
+
+![foto63](img/66.PNG)
+
+![foto63](img/67.PNG)
+> Coloco essas duas propriedades com o valor center. Sempre no conteiner
