@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.conteiner {
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row nowrap;
+      }
+
+      div.conteiner2 {
+        padding-top: 20px;
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      div.conteiner3 {
+        padding-top: 20px;
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis: 250px;
+        /*flex-shrink: 1;*/ /*CONFIGURAÇÃO PADRÃO*/
+        /*flex-grow: 0;*/ /*CONFIGURAÇÃO PADRÃO*/
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+
+      div.item2 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis: 250px;
+        /*flex-shrink: 1;*/ /*CONFIGURAÇÃO PADRÃO*/
+        /*flex-grow: 0;*/ /*CONFIGURAÇÃO PADRÃO*/
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+
+      div.item3 {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis: 250px;
+        /*flex-shrink: 1;*/ /*CONFIGURAÇÃO PADRÃO*/
+        /*flex-grow: 0;*/ /*CONFIGURAÇÃO PADRÃO*/
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+
+    <div class="conteiner2">
+      <div class="item2">A</div>
+      <div class="item2">B</div>
+      <div class="item2">C</div>
+    </div>
+
+       <div class="conteiner3">
+      <div class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas provident officiis animi similique nam libero perferendis molestias ullam iure? Incidunt esse recusandae commodi eum iusto impedit, ab facilis sint?</div>
+      <div class="item3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero itaque accusantium nulla repellat! Dignissimos laboriosam doloremque, in harum accusamus quisquam, autem reiciendis quam odit eligendi veniam enim ullam, nobis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus ad, repellendus velit voluptatum repudiandae. Suscipit soluta esse similique minus modi laboriosam, molestiae voluptatum quaerat deleniti impedit, corrupti sit veritatis!</div>
+      <div class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi mollitia aliquid voluptatibus! Inventore esse molestiae quaerat minima numquam id quibusdam dignissimos doloremque! Iste asperiores nemo iusto cum dignissimos maiores similique! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora minus cumque inventore temporibus. Ut voluptas magni suscipit fuga tenetur, dolorum voluptatem possimus placeat reprehenderit magnam. Maxime eveniet laboriosam voluptas nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor, veniam fugiat quasi quod fugit nobis molestiae, ullam, neque voluptatum praesentium aspernatur quae reprehenderit labore iure tempora repudiandae enim laborum.</div>
+    </div>
+  </body>
+</html>

@@ -512,3 +512,175 @@ E se eu diminuir mais ainda?
 
 ![foto63](img/100.PNG)
 > Terá esse tipo de problema
+
+# Controle do tamanho de itens flexíveis
+
+Vamos aprender sobre as propriedades **flex-shrink** e **flex-grow** São aplicados aos elementos filhos
+
+**grow** é o quanto pode crescer
+
+**shrink** é o quanto pode encolher
+
+Crescer ou diminuir vai depender se pode quebrar ou não, então é importante colocar a propriedade **flex-flow: row nowrap;**
+
+![foto63](img/101.PNG)
+
+![foto63](img/102.PNG)
+
+![foto63](img/103.PNG)
+>Por padrão **flex-shrink** é 1 e **flex-grow** é 0
+
+**flex-shrink: 1** significa que SIM, pode *encolher*
+
+**flex-shrink: 0** significa que NÃO, não pode *encolher*
+
+Qualquer valor diferente de 0 e positivo, significa que pode encolher
+
+**flex-grow: 0** significa que NÃO, não pode *crescer*
+
+![foto63](img/104.PNG)
+
+Oque acontece se eu diminuir mais?
+
+![foto63](img/105.PNG)
+> Os três elementos encolheram pra poder caber, porque o **flex-shrink** de cada elementos está configurado pra 1
+
+![foto63](img/104.PNG)
+
+Oque acontece se eu aumentar mais?
+
+![foto63](img/106.PNG)
+> não vai acontecer nada com os filhos, porque o **flex-grow** é 0.
+
+
+Agora com o **flex-grow: 1**
+
+![foto63](img/107.PNG)
+
+![foto63](img/108.PNG)
+> os elementos se esticam de acordo com o tamanho do conteiner
+
+![foto63](img/109.PNG)
+
+Se você quizer que os elementos sejam totalmente elásticos, que diminuem até o seu limite, e aumente até o seu limite você precisa colocar **flex-shrink: 1** e **flex-grow:1**
+
+Agora com o **flex-grow: 1** e **flex-shrink: 0**
+
+
+![foto63](img/110.PNG)
+
+e se diminuir?
+
+![foto63](img/111.PNG)
+> Os itens ficaram travados dentro, e mesmo o conteiner diminuindo, houve um vazamento/overflow
+
+e se aumentar?
+
+![foto63](img/112.PNG)
+
+## Aplicando flex-grow individualmente
+
+### Primeiro exemplo 
+
+![foto63](img/113.PNG)
+> o primeiro e o ultimo elemento não vão crescer
+
+![foto63](img/114.PNG)
+> somente o elemento do meio cresceu
+
+### Segundo exemplo 
+
+![foto63](img/115.PNG)
+
+![foto63](img/116.PNG)
+> O elemento do meio vai crescer, mais o ultimo elemento vai crescer o dobro do elemento do meio, isso porque o 2 é o dobro de 1
+
+### Terceiro exemplo 
+
+![foto63](img/117.PNG)
+
+
+![foto63](img/118.PNG)
+> os dois ultimos elementos vão crescer por igual, pois tem a mesma proporção
+
+## Aplicando flex-shrink individualmente
+
+### Primeiro exemplo
+
+![foto63](img/119.PNG)
+
+![foto63](img/120.PNG)
+> o primeiro e o último não vai encolher. o do meio vai encolher
+
+### Segundo exemplo
+
+![foto63](img/121.PNG)
+
+
+![foto63](img/122.PNG)
+> O do meio não vai encolher, o ultimo vai encolher, o primeiro elemento vai reduzir o dobro 
+
+## Aplicando flex-shrink, flex-grow e flex-basis individualmente
+
+![foto63](img/123.PNG)
+
+Se eu aumentar?
+
+![foto63](img/124.PNG)
+
+Se eu diminuir?
+
+![foto63](img/125.PNG)
+
+![foto63](img/126.PNG)
+> Com essas configurações você gera a versão base, versão ampliada e a versão reduzida
+
+# Propriedade Flex
+
+Se aplica somente aos filhos
+
+Anteriormente
+
+![foto63](img/123.PNG)
+
+**EVITE USAR INDIVIDUALMENTE OS VALORES DE FLEX BASIS, GROW E SHRINK**
+> *W3C*
+
+Existe a propriedade *FLEX* que é um *SHORTHAND*
+
+![foto63](img/127.PNG)
+>Primeiro é o grow, depois o shrink e por último o basis
+
+![foto63](img/128.PNG)
+> essa é a fórmula do flex
+
+## Outras simplificações
+
+![foto63](img/129.PNG)
+> Configuração padrão, ou seja, se eu não colocar nada
+
+![foto63](img/130.PNG)
+> Para configuração padrão, você também pode por *flex: initial*
+
+![foto63](img/131.PNG)
+> Configuração pra deixar os elementos não-flexíveis, ou seja, não podem crescer, não podem diminuir, e o tamanho deles vai depender do conteúdo
+
+![foto63](img/132.PNG)
+> Para configuração não-flexível, você também pode por *flex: none*
+
+![foto63](img/133.PNG)
+> Configuração de máxima flexibilidade. É o contrário do 0 0 auto. Você pode crescer avontade o elemento, diminuir avontade, e o limite de aumentar e diminuir vai ser o tamanho natural do conteúdo.
+
+![foto63](img/134.PNG)
+> Para configuração máxima-flexível, você também pode por *flex: auto*
+
+![foto63](img/135.PNG)
+> O flex grow desse elemento vai ser 3. O flex shrink e o flex basis são os valores padronizados
+
+![foto63](img/136.PNG)
+
+### RESUMO
+
+
+![foto63](img/137.PNG)
+
