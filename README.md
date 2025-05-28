@@ -1,10 +1,10 @@
 # Desenvolvimento Front End Prática
 
-[HTML5](HTML5/README.md)
+[HTML5](HTML5/HTML5.md)
 
-[CSS](CSS/README.md)
+[CSS](CSS/+README.md)
 
-[Javascript](JavaScript/README.md)
+[Javascript](JavaScript/javascript.md)
 
 
 # Desenvolvimento Front End Teoria
