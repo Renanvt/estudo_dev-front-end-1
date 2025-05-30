@@ -22,24 +22,22 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 header > h1 {
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   flex: 0 0 200px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.212);
 }
 
 header > nav {
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  
 }
 
 nav > a {
-
   background-color: black;
   color: white;
   padding: 10px;
@@ -47,7 +45,6 @@ nav > a {
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
- 
 }
 
 nav > a:hover {
