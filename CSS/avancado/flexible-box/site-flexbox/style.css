@@ -7,70 +7,70 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-header {
-  margin: 10px;
+p,
+h1,
+h2 {
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
-header > h1 {
-  padding: 5px 0px 10px 0px;
-}
-
-header > p {
-  padding: 0px 0px 10px 0px;
-}
 main {
   background-color: rgb(236, 236, 236);
+
+}
+
+header,
+section.rodapé {
+  padding: 20px;
+}
+
+section.flex-content {
+  padding: 20px;
   display: flex;
-  flex-flow: column wrap;
-}
-
-section {
-  background-color: rgb(236, 236, 236);
-  border: 1px dashed black;
-  padding: 0px 10px 0px 10px;
-}
-
-div > h1 {
-  padding: 10px 0px 20px 0px;
-}
-
-div >  p {
-  padding: 0px 0px 20px 0px;
-}
-
-section#princial {
-
-}
-section > div.principal-conteiner {
-  display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   border: 1px dashed blue;
-  align-content: center;
-  align-items: center;
+}
+
+section > article {
   
 }
-div.principal-conteiner > div.texto {
-  flex: 1 1 55vw;
-  border: 1px dashed red;
-  margin-right: 30px;
+article.flex-content_mediatext {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
 }
 
-div.principal-conteiner > div.imagem {
-  flex: 0 0 30vw;
+article.flex-content_textmedia {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+div.text {
+ flex: 1 0 500px;
+  border: 1px dashed blue;
+  
+}
+
+div.media {
+  flex: 1 0 400px;
   border: 1px dashed red;
 }
 
-div.principal-conteiner > div.video {
-  flex: 0 0 30vw;
-  border: 1px dashed red;
+div.media > img {
+    display: block;
+    margin: auto;
 }
 
-
-section#rodapé {
+div.media > iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+section.rodapé {
   background-color: white;
 }
-
