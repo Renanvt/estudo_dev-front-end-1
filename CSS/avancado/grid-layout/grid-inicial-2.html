@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout na Prática</title>
+    <style>
+      div.container {
+        border: 3px solid blue;
+        display: grid; /*muda a estrutura do container, embora nada mude visualmente de primeira*/
+        grid-template-rows: 80px 80px 80px;
+        grid-template-columns: 120px 120px 120px;
+        grid-auto-flow: column; /*Por padrão é row, ou seja, quando acrescentar um item novo irá acrescentar em forma de linha*/
+        grid-auto-rows: 80px;/*Sempre que for criar uma célula nova ela terá também 80px*/
+        grid-auto-columns: 120px;
+        gap: 5px;
+        place-items: normal normal;
+        place-content: normal  normal;
+      }
+
+      div.item {
+        border: 3px solid red;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
+    </div>
+  </body>
+</html>

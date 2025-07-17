@@ -707,3 +707,293 @@ Existe a propriedade *FLEX* que é um *SHORTHAND*
 
 ![foto63](img/137.PNG)
 
+# Grid Layout
+
+## Estrutura de um GRID
+
+![foto138](img/138.PNG)
+
+![foto138](img/139.PNG)
+
+![foto138](img/140.PNG)
+
+![foto138](img/141.PNG)
+
+![foto138](img/142.PNG)
+
+Proposta de grade
+
+![foto138](img/143.PNG)
+
+![foto138](img/144.PNG)
+
+![foto138](img/145.PNG)
+
+![foto138](img/146.PNG)
+
+
+![foto138](img/147.PNG)
+> Exemplo de site feito no modelo antigo, utilizava o conceito de tabelas
+
+![foto138](img/148.PNG)
+
+![foto138](img/149.PNG)
+> Exemplo de site com modelo antigo com o uso de frames
+
+![foto138](img/150.PNG)
+
+## Anatomia de um GRID
+
+
+grid-row e line-grid são coisas diferentes.
+
+grid-area e grid-item são coisas diferentes.
+
+Configurações aplicadas sempre no grid-conteiner
+
+![foto138](img/151.PNG)
+
+![foto138](img/152.PNG)
+
+![foto138](img/153.PNG)
+> Quando as linhas e colunas se cruzem esse ponto ali no meio se chama item de grade
+
+![foto138](img/154.PNG)
+
+![foto138](img/155.PNG)
+> São sempre alinhadas da esquerda pra direita, a linha mais a esquerda numeramos como 1 e a última linha somada de 1 até a ultima. Demilitam as columns-tracking
+
+![foto138](img/156.PNG)
+> São sempre alinhadas de cima pra baixo, a linha mais a acima numeramos como 1 e a última linha somada de 1 até a ultima. Demilitam as row-trackings
+
+
+Pra mim fazer 6 trackings eu preciso de 7 linhas
+
+![foto138](img/157.PNG)
+> Também podem ser referenciadas dessa forma
+
+![foto138](img/158.PNG)
+
+![foto138](img/159.PNG)
+> Essa área vai da segunda até a penúltima, independende do número
+
+
+![foto138](img/160.PNG)
+
+![foto138](img/161.PNG)
+
+![foto138](img/162.PNG)
+
+![foto138](img/163.PNG)
+
+![foto138](img/164.PNG)
+
+
+# Propriedades de container para Grids
+
+Grid-Layout é uma estrututura bidimensional enquanto a flex-box é uma estutura unidimensional
+
+Pessoal se enrola muito quando quer trabalhar com linha e coluna utilizando o flex-box, até porque o flex-box funciona ou em linha ou em coluna
+
+![foto138](img/165.PNG)
+
+![foto138](img/166.PNG)
+
+
+## display
+
+Colocou **display:grid;** em um componente ele automaticamente vira grid container e automaticamente tudo que tiver dentro dele são grid-itemns
+
+Colocou **display:grid;** em um componente ele automaticamente vira grid container e automaticamente tudo que tiver dentro dele são grid-itemns
+
+![foto138](img/167.PNG)
+
+
+![foto138](img/168.PNG)
+
+![foto138](img/169.PNG)
+
+![foto138](img/170.PNG)
+> Quando coloca display:grid nada muda
+
+## grid-template-columns
+
+![foto138](img/171.PNG)
+> O pai é um grid e ele vai ter o seguinte template de colunas: auto auto. Estou dizendo para o CSS, transforme esse GRID em um GRID de duas colunas
+
+Nesse caso ele pegou automaticamente todos os elementos e separou eles em duas colunas
+
+![foto138](img/172.PNG)
+> Nesse caso será criado um grid com 3 colunas. **"auto auto auto"**
+
+Como colocou auto, ele vai calcular automaticamente a largura do container para que todos os itens tenham o mesmo tamanho.
+
+
+## grid-template-rows
+
+Você também pode configurar a estrutura das linhas. Por exemplo
+
+![foto138](img/173.PNG)
+
+![foto138](img/174.PNG)
+
+
+Nesse caso meu container vai aumentar e todos os filhos terão
+
+
+> Cada linha terá 100px de altura
+
+Tem como fazer com que não estique também, mais por padrão ele vai esticar ou se expremer
+
+## grid-gap
+
+![foto138](img/175.PNG)
+> Cria um espaçinho padrão entre os itens. Essa propriedade muda todos ao mesmo tempo
+
+![foto138](img/176.PNG)
+
+![foto138](img/177.PNG)
+
+![foto138](img/178.PNG)
+
+## grid-auto-row
+
+São propriedades usadas para quando formos criar células que estiverem fora do grid (dentro do grid implícito)
+
+Existe o Grid Explícito que é aquele que foi declarado e o Grid Implícito é quando ultrapassa o número de células sempre vai acrescentando sem dar erro
+
+![foto138](img/179.PNG)
+
+![foto138](img/180.PNG)
+
+![foto138](img/181.PNG)
+> Acrescentei mais dois elementos
+
+![foto138](img/182.PNG)
+> isso é oque acontece se eu acrescentar mais elementos
+
+Meu grid explícito é auto auto auto. 100 100 100. 3 colunas com 3 itens só caberiam 9 itens. O J está fazendo parte do grid implícito e está dimensionado de acordo com o tamanho do conteúdo. 
+
+Nesse caso precisamos usar a propriedade grid-auto-row
+
+![foto138](img/183.PNG)
+> Sempre que eu for acrescentar uma linha nova, essa linha nova do grid vai ter 100PX também
+
+## grid-auto-column
+
+Dependendo da configuração o J também pode crescer para o lado no eixo horizontal
+
+![foto138](img/184.PNG)
+
+![foto138](img/185.PNG)
+> Sempre que eu for acrescentar uma coluna nova, essa coluna nova do grid vai ter 100PX também
+
+
+## Simplificando as coisas com o Grid Layout
+
+### place-items e place-content
+
+![foto138](img/186.PNG)
+
+![foto138](img/187.PNG)
+
+![foto138](img/188.PNG)
+> Vai configurar de forma simplificada o align items e justify items
+
+![foto138](img/189.PNG)
+> Vai configurar de forma simplificada o align-content e justify-content
+
+
+![foto138](img/190.PNG)
+> Primeiro vem o align(vertical) e depois o justify(horizontal)
+
+### grid-template
+
+![foto138](img/191.PNG)
+
+![foto138](img/192.PNG)
+> Primeiro vem o rows e depois os columns
+
+![foto138](img/193.PNG)
+
+### Função repeat()
+
+![foto138](img/194.PNG)
+
+![foto138](img/195.PNG)
+( Esses são os parâmetros: {quantas vezes eu vou repetir} {qual é o valor que eu quero repetir})
+
+![foto138](img/196.PNG)
+
+![foto138](img/197.PNG)
+
+
+Posso simplificar ainda mais, veja:
+
+![foto138](img/198.PNG)
+
+![foto138](img/199.PNG)
+
+### Unidade fraction
+
+Melhora muito a precisão do GRID
+
+![foto138](img/200.PNG)
+
+![foto138](img/201.PNG)
+> Terá 500px cada uma porque a configuração de colunas está como automática
+
+Podemos substituir o valor de auto auto auto para 1fr 1fr 1fr
+
+Quando eu utilizar um template tanto para colunas ou tanto para linhas faremos um cáculo simples de soma. 1 + 1 + 1 = 3. Ou seja, vai pegar a largura inteira do container e vai dividir em 3 vezes iguais dando 500PX cada um
+
+![foto138](img/202.PNG)
+
+![foto138](img/203.PNG)
+
+**Quando usar o FR?**
+Vai usar o GRID? utilize FR no lugar de auto
+
+**E se eu quiser que a célular B tenha o dobro da largura das células A e C?**
+Nesse caso utilizamos, já que o auto não vai funcionar
+
+![foto138](img/204.PNG)
+
+![foto138](img/205.PNG)
+> Nesse caso estou divindo o GRID em 3 partes, mais com 4 frações. Isso se dá pela soma dos fr. Pega 1500 e divide ele por 4
+
+![foto138](img/206.PNG)
+
+![foto138](img/207.PNG)
+
+Pode acontecer em uma declaração você misturar medidas. **não é recomendável**
+
+Oque irá acontecer nesse caso?
+
+![foto138](img/208.PNG)
+
+20% é 20% da largura total do container. 20% de 1500 é 300px.
+
+Essas duas frações por últimos não será a partir do total, vai ser baseado naquilo que sobrou. 400px já ocupados. 1500 - 400 = 1100px.
+
+![foto138](img/209.PNG)
+
+
+Desses 1100 vai fazer as frações. 1100/2 = 550px. Resultando em duas frações de 550px
+
+![foto138](img/210.PNG)
+
+Resumindo, primeiro você faz as contas nas medidas fixas e nas porcentagens, calcula quanto que sobrou e oque sobrou você divide em frações
+
+![foto138](img/211.PNG)
+
+![foto138](img/212.PNG)
+> Posso simplificar com o repeat
+
+
+
+
+
+
+
+
