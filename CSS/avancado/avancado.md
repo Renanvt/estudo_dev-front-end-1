@@ -991,8 +991,36 @@ Resumindo, primeiro você faz as contas nas medidas fixas e nas porcentagens, ca
 > Posso simplificar com o repeat
 
 
+# Propriedades de itens para Grids
+
+Propriedades que só podem ser aplicadas em itens
+
+Posso fazer com que determinado elemento ocupe um pedaço de uma grade, dessa maneira:
+
+![foto138](img/213.PNG)
+
+![foto138](img/214.PNG)
 
 
+## grid-row-start e grid-row-end
+
+![foto138](img/215.PNG)
+
+![foto138](img/216.PNG)
+> No grid a linha de começo dessa caixa 1 vai ser a linha 1
+
+
+## grid-column-start e grid-column-end
+
+![foto138](img/217.PNG)
+
+![foto138](img/218.PNG)
+
+![foto138](img/219.PNG)
+
+## Resumo
+
+![foto138](img/220.PNG)
 
 
 
