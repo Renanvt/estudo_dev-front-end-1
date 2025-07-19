@@ -1018,9 +1018,88 @@ Posso fazer com que determinado elemento ocupe um pedaço de uma grade, dessa ma
 
 ![foto138](img/219.PNG)
 
+
+
 ## Resumo
 
 ![foto138](img/220.PNG)
+
+# Shorthands para itens
+
+Podemos fazer isso também
+
+![foto138](img/222.PNG)
+
+![foto138](img/221.PNG)
+
+## span
+
+![foto138](img/223.PNG)
+> Vai da linha 1 até a linha 4, tive uma expansão de 3
+
+![foto138](img/224.PNG)
+
+![foto138](img/225.PNG)
+> Vai da coluna 1 até a coluna 3, teve uma expansão de 2 elementos
+
+![foto138](img/226.PNG)
+
+## Simplificando declarações
+
+### grid-row
+
+![foto138](img/227.PNG)
+
+![foto138](img/228.PNG)
+> Começa na 1 e termina na 4
+
+### grid-column
+
+![foto138](img/229.PNG)
+
+![foto138](img/230.PNG)
+
+### grid-area
+
+Tem como simplificar ainda mais com o grid-area
+
+
+![foto138](img/231.PNG)
+
+![foto138](img/232.PNG)
+
+o **grid-area** segue a seguinte ordem: grid-row-start -> grid-column-start / grid-row-end -> grid-column-end
+
+## Resumo
+
+![foto138](img/233.PNG)
+
+![foto138](img/234.PNG)
+
+![foto138](img/235.PNG)
+
+## Desafio
+
+![foto138](img/236.PNG)
+
+![foto138](img/238.PNG)
+
+![foto138](img/239.PNG)
+
+![foto138](img/237.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
